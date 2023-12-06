@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import {AnimatePresence} from 'framer-motion'
+import Header from "./components/Header/Header";
+import SocialMedia from "./components/SocialMedia/SocialMedia";
+import { Routers } from "./routes/Routers";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AnimatePresence mode='wait'>
+      <Header />
+      <SocialMedia />
+      <div className="h-screen w-screen bg-hero-image bg-cover bg-center overflow-y-scroll bg-scroll">
+        <div className='h-screen w-screen bg-secondary bg-opacity-95'>
+          <Routers />
+        </div>
+      </div>
+    </AnimatePresence>
   );
 }
 
