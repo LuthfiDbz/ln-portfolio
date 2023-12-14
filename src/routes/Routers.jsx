@@ -4,7 +4,7 @@ import {
   Navigate,
   Route,
 } from "react-router-dom";
-import Home from "../pages/Home";
+import Home from "../pages/Hero";
 
 export const Routers = () => {
   return (

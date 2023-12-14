@@ -7,19 +7,19 @@ const Header = () => {
   const menu = [
     {
       name: 'Home',
-      link: '/'
+      link: '#'
     },
     {
       name: 'Projects',
-      link: '/projects'
+      link: '#projects'
     },
     {
       name: 'About',
-      link: '/about'
+      link: '#about'
     },
     {
       name: 'Contact',
-      link: '/contact'
+      link: '#contact'
     }
   ]
   return (
@@ -29,10 +29,10 @@ const Header = () => {
         <div>
           <ul className='flex gap-11 text-on-primary'>
             {menu.map((men, index) => {
-              console.log(location.pathname)
+              console.log(location.hash)
               return (
                 <li key={index}>
-                  <Link to={men.link} className={`${location.pathname.includes(men.name.toLowerCase()) ? 'underline' : 'no-underline hover:underline'} underline-offset-8 decoration-primary decoration-2 transition ease-in-out duration-300`}>{men.name}</Link>
+                  <Link to={men.link} className={`${location.hash.includes(men.name.toLowerCase()) ? 'underline' : 'no-underline hover:underline'} underline-offset-8 decoration-primary decoration-2 transition ease-in-out duration-300`}>{men.name}</Link>
                 </li>
               )
             })}

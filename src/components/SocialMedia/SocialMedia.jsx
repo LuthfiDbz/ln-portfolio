@@ -42,7 +42,7 @@ const SocialMedia = () => {
               </li>
             )
           })}
-          <div className='border-primary border-2 rounded-b-lg w-0 mt-50 h-16 mt-2 rounded-2xl'></div>
+          <div className='border-primary border-3 rounded-b-lg w-0 mt-50 h-16 mt-2 rounded-2xl'></div>
         </ul>
         {/* <hr className='rotate-90 mt-12 text-primary border-2 rounded-2xl w-12 bg-on-secondary' /> */}
       </div>

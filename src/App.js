@@ -1,20 +1,23 @@
-import {AnimatePresence} from 'framer-motion'
 import Header from "./components/Header/Header";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import { Routers } from "./routes/Routers";
+import Hero from "./pages/Hero";
+import Projects from "./pages/Projects";
 
 
 function App() {
   return (
-    <AnimatePresence mode='wait'>
+    <div>
       <Header />
       <SocialMedia />
-      <div className="h-screen w-screen bg-hero-image bg-cover bg-center overflow-y-scroll bg-scroll">
-        <div className='h-screen w-screen bg-secondary bg-opacity-95'>
-          <Routers />
+      <div className="h-screen w-screen bg-hero-image bg-cover bg-center">
+        <div className='h-screen w-screen bg-secondary bg-opacity-95 overflow-y-scroll bg-scroll  ' >
+          {/* <Routers /> */}
+          <Hero />
+          <Projects />
         </div>
       </div>
-    </AnimatePresence>
+    </div>
   );
 }
 
