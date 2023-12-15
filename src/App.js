@@ -3,6 +3,7 @@ import SocialMedia from "./components/SocialMedia/SocialMedia";
 import { Routers } from "./routes/Routers";
 import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
+import AboutMe from "./pages/AboutMe";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           {/* <Routers /> */}
           <Hero />
           <Projects />
+          <AboutMe />
         </div>
       </div>
     </div>
