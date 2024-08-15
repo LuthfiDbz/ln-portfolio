@@ -1,10 +1,10 @@
 import React from "react";
 import {
   Routes,
-  Navigate,
   Route,
 } from "react-router-dom";
-import Home from "../pages/Hero";
+import Home from "../pages/Home";
+import ProgresBar from "../components/Loader/ProgresBar";
 
 export const Routers = () => {
   return (

@@ -23,8 +23,8 @@ const Header = () => {
     // }
   ]
   return (
-    <div className="relative">
-      <div className="fixed top-0 left-0 right-0 mx-32 flex items-center justify-between">
+    <div data-aos="fade-down" className="relative">
+      <div className=" top-0 left-0 right-0 mx-32 flex items-center justify-between">
         <img src={logo} alt="" className='w-44' />
         <div>
           <ul className='flex gap-11 text-on-primary'>

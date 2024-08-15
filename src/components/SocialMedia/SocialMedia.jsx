@@ -34,7 +34,7 @@ const SocialMedia = () => {
   return (
     <div className="relative">
       <div className="fixed bottom-0 flex items-center justify-between ms-8">
-        <ul className='text-on-primary width-24 flex flex-col justify-center items-center gap-4'>
+        <ul data-aos="flip-left" className='text-on-primary width-24 flex flex-col justify-center items-center gap-4'>
           {social.map((soc, index) => {
             return (
               <li key={index}>
