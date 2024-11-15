@@ -36,7 +36,7 @@ const Experience = () => {
               <li className="mb-2">- Maintain admin web or CMS, utilizing Ant Design and React Redux to streamline content management and administrative workflows.</li>
               <li className="mb-2">- Create SEO-optimized landing pages by splitting them from the main customer order website, using Next.js and Tailwind CSS for improved performance and visibility.</li>
               <li className="mb-2">- Integrate Google Analytics into the landing pages to track user behavior and support SEO strategy.</li>
-              <li>- Develop and maintain a warehouse management system (WMS) using Ant Design, React Redux, and Tailwind CSS, providing tools for inventory and warehouse operations.</li>
+              {/* <li>- Develop and maintain a warehouse management system (WMS) using Ant Design, React Redux, and Tailwind CSS, providing tools for inventory and warehouse operations.</li> */}
             </ul>
           </div>
           <h5 className="text-end w-3/12 font-bold">Feb 2023 - Present</h5>
