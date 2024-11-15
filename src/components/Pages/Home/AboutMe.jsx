@@ -7,29 +7,32 @@ import bootstrapIcon from '../../../assets/icon/tools/bootstrap.png'
 import sassIcon from '../../../assets/icon/tools/sass.png'
 import tailwindIcon from '../../../assets/icon/tools/tailwind.png'
 import reactIcon from '../../../assets/icon/tools/react.png'
+import typescriptIcon from '../../../assets/icon/tools/ts.png'
+import nextjsIcon from '../../../assets/icon/tools/nextjs.png'
 import jqueryIcon from '../../../assets/icon/tools/jquery.png'
 import antdIcon from '../../../assets/icon/tools/antd.png'
 import reduxIcon from '../../../assets/icon/tools/redux.png'
 import nodejsIcon from '../../../assets/icon/tools/nodejs.png'
 import expressIcon from '../../../assets/icon/tools/express.png'
+import jestIcon from '../../../assets/icon/tools/jest.png'
 
 const AboutMe = () => {
   const toolsIcon = [
     // { name: "HTML", url: htmlIcon, alt: 'html' },
     // { name: "CSS", url: cssIcon, alt: 'css' },
     // { name: "Javascript", url: jsIcon, alt: 'js' },
-    { name: "Typescript", url: reactIcon, alt: 'react' },
-    { name: "NextJS", url: reactIcon, alt: 'react' },
     { name: "ReactJS", url: reactIcon, alt: 'react' },
+    { name: "NextJS", url: nextjsIcon, alt: 'react' },
+    { name: "Typescript", url: typescriptIcon, alt: 'react' },
     { name: "jQuery", url: jqueryIcon, alt: 'jquery' },
     { name: "Tailwind", url: tailwindIcon, alt: 'tailwind' },
     { name: "Bootstrap", url: bootstrapIcon, alt: 'bootstrap' },
     { name: "SASS", url: sassIcon, alt: 'sass' },
     { name: "Ant Design", url: antdIcon, alt: 'antd' },
     { name: "Redux", url: reduxIcon, alt: 'redux' },
-    { name: "Jest", url: reduxIcon, alt: 'redux' },
     { name: "NodeJS", url: nodejsIcon, alt: 'nodejs' },
     { name: "ExpressJS", url: expressIcon, alt: 'express' },
+    { name: "Jest", url: jestIcon, alt: 'redux' },
   ]
   return (
     <div id="projects" className='min-h-screen h-fit w-100 pb-40' style={{ paddingTop: '18vh' }}>

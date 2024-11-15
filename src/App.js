@@ -9,11 +9,11 @@ import ProgresBar from "./components/Loader/ProgresBar";
 
 
 function App() {
-  const [splashScreen, setSplashScreen] = useState(true)
+  const [splashScreen, setSplashScreen] = useState(false)
 
-  setTimeout(() => {
-    setSplashScreen(false)
-  }, 3000)
+  // setTimeout(() => {
+  //   setSplashScreen(false)
+  // }, 3000)
 
   useEffect(() => {
     AOS.init({

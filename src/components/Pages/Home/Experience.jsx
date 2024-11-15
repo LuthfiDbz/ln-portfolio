@@ -32,9 +32,11 @@ const Experience = () => {
             <h4 className="font-bold text-xl">Frontend Developer</h4>
             <h4 className="font-semibold text-base mb-4">PT. Superkul Amerta Indonesia</h4>
             <ul>
-              <li>- Create and maintenance customer website application with React Bootstrap and SASS</li>
-              <li>- Maintenance admin and mitra website with Ant Design and React Redux</li>
-              <li>- Implement Google Analytic into customer landing page</li>
+              <li className="mb-2">- Maintain and enhance the customer order website using React Bootstrap, and SASS, ensuring a smooth user experience.</li>
+              <li className="mb-2">- Maintain admin web or CMS, utilizing Ant Design and React Redux to streamline content management and administrative workflows.</li>
+              <li className="mb-2">- Create SEO-optimized landing pages by splitting them from the main customer order website, using Next.js and Tailwind CSS for improved performance and visibility.</li>
+              <li className="mb-2">- Integrate Google Analytics into the landing pages to track user behavior and support SEO strategy.</li>
+              <li>- Develop and maintain a warehouse management system (WMS) using Ant Design, React Redux, and Tailwind CSS, providing tools for inventory and warehouse operations.</li>
             </ul>
           </div>
           <h5 className="text-end w-3/12 font-bold">Feb 2023 - Present</h5>
@@ -45,6 +47,11 @@ const Experience = () => {
             <h4 className="font-bold text-xl">Frontend Developer</h4>
             <h4 className="font-semibold text-base mb-4">PT. Aktif Bangun Citra</h4>
             <ul>
+              <li className="mb-2">- Develop and maintain user-friendly logistic web applications for customers to order service.</li>
+              <li className="mb-2">- Collaborate with backend developers and designers to implement responsive and interactive UI components.</li>
+              <li className="mb-2">- Troubleshoot and resolve technical issues to improve website functionality and performance.</li>
+              <li className="mb-2">- Ensure consistent branding and functionality across different browsers and devices.</li>
+              <li className="mb-2">- Work with APIs to seamlessly integrate frontend applications with backend systems for real-time data processing.</li>
             </ul>
           </div>
           <h5 className="text-end w-3/12 font-bold">Nov 2022 - Feb 2023</h5>
