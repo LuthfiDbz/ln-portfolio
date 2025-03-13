@@ -36,15 +36,15 @@ const AboutMe = () => {
   ]
   return (
     <div id="projects" className='min-h-screen h-fit w-100 pb-40' style={{ paddingTop: '18vh' }}>
-      <div className='w-3/5 mx-auto'>
-        <h1 className='title text-4xl font-semibold my-1 text-on-primary mx-auto w-fit'>About Me</h1>
+      <div className='w-4/5 lg:w-3/5 mx-auto'>
+        <h1 className='title text-3xl lg:text-4xl font-semibold my-1 text-on-primary mx-auto w-fit'>About Me</h1>
         <hr className="border-primary mx-auto w-24 border-2 rounded-b-lg rounded-2xl" />
         <div className="mt-8 mb-16 flex items-center justify-between gap-10 w-100">
           <p className="project-desc text-on-primary text-center">I am a professional frontend web developer with experience in Javascript, React, and Tailwind CSS. With a passion for creating visually appealing and user-friendly websites, I strive to deliver high-quality solutions that exceed client expectations. My expertise lies in developing responsive and interactive interfaces, utilizing modern web technologies to optimize performance and enhance user experience.</p>
         </div>
       </div>
-      <div className='w-3/5 mx-auto'>
-        <h1 className='title text-2xl font-semibold my-1 text-on-primary mx-auto w-fit'>Tools & Skills</h1>
+      <div className='w-4/5 lg:w-3/5 mx-auto'>
+        <h1 className='title text-xl lg:text-2xl font-semibold my-1 text-on-primary mx-auto w-fit'>Tools & Skills</h1>
         <hr className="border-primary mx-auto w-24 border-2 rounded-b-lg rounded-2xl" />
         <div className="mt-8 mb-16 flex flex-wrap justify-center gap-6 w-full bg-primary rounded-b-lg rounded-lg py-7 px-2">
           {toolsIcon.map((tools) => {

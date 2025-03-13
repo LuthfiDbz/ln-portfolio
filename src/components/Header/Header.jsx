@@ -25,29 +25,17 @@ const Header = () => {
   return (
     <div data-aos="fade-down" className="relative">
       <div className=" top-0 left-0 right-0 mx-32 flex items-center justify-between">
-        <img src={logo} alt="" className='w-44' />
+        <img src={logo} alt="" className='w-36 lg:w-44 mx-auto' />
         <div>
           <ul className='flex gap-11 text-on-primary'>
-            {menu.map((men, index) => {
+            {/* {menu.map((men, index) => {
               console.log(location.hash)
               return (
                 <li key={index}>
                   <Link to={men.link} className={`${location.hash.includes(men.name.toLowerCase()) ? 'underline' : 'no-underline hover:underline'} underline-offset-8 decoration-primary decoration-2 transition ease-in-out duration-300`}>{men.name}</Link>
                 </li>
               )
-            })}
-            {/* <li>
-              <Link to={'/'} className='underline underline-offset-8 decoration-primary decoration-2 '>Home</Link>
-            </li>
-            <li>
-              <Link to={'/projects'} className="no-underline hover:underline underline-offset-8 decoration-primary decoration-2" >Projects</Link>
-            </li>
-            <li>
-              <Link to={'/about'}>About</Link>
-            </li>
-            <li>
-              <Link to={'/contact'}>Contact</Link>
-            </li> */}
+            })} */}
           </ul>
         </div>
       </div>

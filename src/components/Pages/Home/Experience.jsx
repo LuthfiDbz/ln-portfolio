@@ -23,12 +23,14 @@ const Experience = () => {
   }
   return (
     <div id="projects" className='h-fit w-100' style={{ paddingTop: '12vh' }}>
-      <div className='w-4/6 mx-auto'>
-        <h1 className='title text-4xl font-semibold my-1 text-on-primary mx-auto w-fit'>My Experience</h1>
-        <hr className="border-primary mx-auto w-28 border-2 rounded-b-lg rounded-2xl" />
-        <div className="flex bg-primary bg-opacity-80 mt-10 text-white items-start rounded-lg py-4 px-6 gap-8">
-          <img src={logo} alt="" className='w-2/12 bg-white p-2 rounded-md' />
-          <div className="w-7/12 ms-2">
+      <div className='w-5/6 lg:w-4/6 mx-auto'>
+        <h1 className='title text-3xl lg:text-4xl font-semibold my-1 text-on-primary mx-auto w-fit'>My Experience</h1>
+        <hr className="border-primary mx-auto w-24 lg:w-28 border-2 rounded-b-lg rounded-2xl" />
+        <div className="lg:flex bg-primary bg-opacity-80 mt-10 text-white items-start rounded-lg py-4 px-6 gap-8">
+          <img src={logo} alt="" className='w-6/12 mx-auto lg:w-2/12 bg-white p-2 rounded-md' />
+          <h5 className="lg:hidden text-center w-full mt-4 font-bold mx-auto">Feb 2023 - Present</h5>
+          <br />
+          <div className="lg:w-7/12 ms-2">
             <h4 className="font-bold text-xl">Frontend Developer</h4>
             <h4 className="font-semibold text-base mb-4">PT. Superkul Amerta Indonesia</h4>
             <ul>
@@ -39,11 +41,13 @@ const Experience = () => {
               {/* <li>- Develop and maintain a warehouse management system (WMS) using Ant Design, React Redux, and Tailwind CSS, providing tools for inventory and warehouse operations.</li> */}
             </ul>
           </div>
-          <h5 className="text-end w-3/12 font-bold">Feb 2023 - Present</h5>
+          <h5 className="hidden lg:block text-end w-3/12 font-bold">Feb 2023 - Present</h5>
         </div>
-        <div className="flex bg-primary bg-opacity-80 mt-10 text-on-primary items-start rounded-lg py-4 px-6 gap-8">
-          <div className='w-2/12 bg-on-primary p-2 rounded-md text-secondary text-center text-2xl font-bold'>ABC</div>
-          <div className="w-7/12 ms-2">
+        <div className="lg:flex bg-primary bg-opacity-80 mt-10 text-on-primary items-start rounded-lg py-4 px-6 gap-8">
+          <div className='w-6/12 mx-auto lg:w-2/12 bg-on-primary p-2 rounded-md text-secondary text-center text-2xl font-bold'>ABC</div>
+          <h5 className="lg:hidden text-center w-full mt-4 font-bold mx-auto">Nov 2022 - Feb 2023</h5>
+          <br />
+          <div className="lg:w-7/12 ms-2">
             <h4 className="font-bold text-xl">Frontend Developer</h4>
             <h4 className="font-semibold text-base mb-4">PT. Aktif Bangun Citra</h4>
             <ul>
@@ -54,7 +58,7 @@ const Experience = () => {
               <li className="mb-2">- Work with APIs to seamlessly integrate frontend applications with backend systems for real-time data processing.</li>
             </ul>
           </div>
-          <h5 className="text-end w-3/12 font-bold">Nov 2022 - Feb 2023</h5>
+          <h5 className="hidden lg:block text-end w-3/12 font-bold">Nov 2022 - Feb 2023</h5>
         </div>
       </div>
     </div>
