@@ -11,6 +11,7 @@ jobs:
 
     env:
       REACT_APP_API_URL: ${{ secrets.REACT_APP_URL }} # Sesuaikan env React
+      CI: false
 
     steps:
       - name: Checkout code
