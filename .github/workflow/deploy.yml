@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build
-          server-dir: ${{ secrets.FTP_TARGET || 'public_html/' }}
+          server-dir: public_html
           dry-run: false
