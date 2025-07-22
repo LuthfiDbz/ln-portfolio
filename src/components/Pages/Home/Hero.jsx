@@ -1,4 +1,5 @@
 const Hero = () => {
+  console.log('Success CI/CD')
   return (
     <div className='h-screen' style={{ paddingTop: '25vh' }}>
       <div data-aos="zoom-in" className='w-fit mx-auto'>

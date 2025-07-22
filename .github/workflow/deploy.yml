@@ -1,0 +1,38 @@
+name: Deploy React to Dewaweb FTP
+
+on:
+  push:
+    branches:
+      - main # atau branch yang kamu pakai
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      REACT_APP_API_URL: ${{ secrets.REACT_APP_URL }} # Sesuaikan env React
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" # sesuaikan dengan versi node kamu
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: build
+          server-dir: ${{ secrets.FTP_TARGET || 'public_html/' }}
+          dry-run: false
